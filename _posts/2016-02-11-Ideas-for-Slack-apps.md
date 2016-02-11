@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Ideas for Slack Apps
+---
 #Ideas for Slack Apps
 
 Right now is a great time to build out a Slack app. They just launched their app marketpace, an opensource starter kit [botkit](https://github.com/howdyai/botkit), and even created a fund to help get new projects off the ground [source](http://slackhq.com/post/134878632730/launch-platform)
