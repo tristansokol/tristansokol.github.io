@@ -2,10 +2,10 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+title:               Tristan's Blog
+tagline:             If only I had a nickel for everytime I made one of these
+url:                 http://www.tristansokol.com
+paginate:            5
 baseurl:             ""
 
 # Assets
@@ -17,14 +17,15 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Tristan Sokol
+  url:               https://twitter.com/tristansokol
+  email:             tristan.sokol@gmail.com
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:
+thanks-to:              https://github.com/poole/poole
 
 # Gems
 gems:
