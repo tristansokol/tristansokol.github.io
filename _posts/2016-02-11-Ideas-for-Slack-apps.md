@@ -18,4 +18,4 @@ As such, I've been pretending to be hard at work while fantasizing about weird i
    
    ![view out of an airplane](https://lh3.googleusercontent.com/3JAMrtwMe0Bx-chEGM1w3FjmVehrTWQ0MztcHrXd7GhUkpjVaYAZ9oD0nO7gQea85MkluTa6qYj4U55ZY4uCeIW43MlBMTVlL5mhjmZsbI_hNZoQ5JCbc7gV5XUdAaLCvR5HSTpIPvpGKK9UtmCX9AZ39ryjmpZa8l9TXoD9aGpcXVPt9ltcM3qqDn5SrE8wE95fkOfC046tpbzjnVDUynxoXAhO3k0R1YLtU5w2ZKTgsitfXef0NVByM9Y48TDXLzAENIgcRjy0ANCvKLNjyAfFESvfsJZk6FItrsZM8zF2gU5ZmbgL6Xb7vEebQ523TxzROlrmw1YVGQP0FNdXcmornmF-IGa31NlPnUWA0dZItrMLKTwgQ5Ld1Sog9DH1xG-kI0Rd3OzlTMYkjZlLlCaBbF7VX1RLO-F5QeCxR2ddI9xrRWWknq27TnmtBZEBAxcRcIBBRFRsMMkc3NMd32a-ZKk0RS9by5Dx7vgsOFXNJB4zNDgghkIeAkjTtIkPhxW7Clzj_8ckfwbSRmpwUo2H1Rp7pYyNp72qi8cP5MzTmXFEdd0B8O8riSQY2Jq-ierN=w570-h426-no "view out of an airplane")
   
-   _This is an animation Google Photos made me when I took an airplane ride_
+   _This is an animation Google Photos made me when I took an airplane ride._
