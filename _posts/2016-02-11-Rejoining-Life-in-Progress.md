@@ -5,7 +5,7 @@ title: Rejoining Life In Progress
 
 _One day I was digging through an attic and I found this story, now I keep it posted online to try and find the owner._ 
 
-##Rejoining Life In Progress 
+## Rejoining Life In Progress 
 
   There a single second moments in life that define the path the rest of your life will go on- wouldn't you agree? Single shot oppertunities that only happen in a flash but languish within the hallways of your mind forever. Moments like your first bicycle- a 10 Speed Huffy with handle breaks, then the first time you fall off of that bicycle. If I had not been given the grace of a Tyrannosaurus Rex this would not be a problem- but some are born with grace and others with looks. I will be obliged take the latter. While I understand that I am not stunning Chuck Norris caliber, I managed quite 'the catch'- my wife Velma. Yes- her real name is Velma.
 
