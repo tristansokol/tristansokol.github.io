@@ -22,3 +22,5 @@ AcaNation has a little over 250 megabytes of text data, who cares how many opera
 #### 1. Install phpMyAdmin
 
 To be honest, I haven't done much work on AcaNation since getting rid of my web hosting. I vaguely remember how some of the tables are set up, but I would hate to do lots of hard work to explore it with SQL commands. Luckily those friendly googlers wrote [this tutorial to setup phpMyAdmin on AppEngine](https://cloud.google.com/sql/docs/phpmyadmin-on-app-engine).
+
+This project halted due too complete apathy for acanation. 
