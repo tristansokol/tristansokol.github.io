@@ -26,6 +26,7 @@ It might take up to 60+ seconds to see anything happen after you drag the files 
 ##### Step 4: Copy to excel
 After step three you should have a browser window with a list of all of your text messages organized by partner. You can scroll to the person you'd like to find, and then copy and paste that person's messages, or every message into a file to save. 
 The four colums are 
+
 * Timestamp (depending on which timezone you were in, which timezone your phone thought you were in, etc., this might be off by a couple hours
 * Is_from_me If 1, then you send the message, if 0, you received it. 
 * Partner, The other person you were texting
