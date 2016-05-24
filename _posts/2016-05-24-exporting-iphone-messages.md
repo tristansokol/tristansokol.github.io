@@ -17,6 +17,7 @@ If you are trusting of random bash scripts you find off the internet, here is a 
 curl -s https://raw.githubusercontent.com/tristansokol/iphone-message-csv-export/master/export.sh | bash
 ```
 Feel free to inspect beforehand if you want. [https://raw.githubusercontent.com/tristansokol/iphone-message-csv-export/master/export.sh](https://raw.githubusercontent.com/tristansokol/iphone-message-csv-export/master/export.sh)
+
 ##### Step 3: Export the files
 From the last step you should have two files that are actually SQLite databases, now you just need to mount them, merge the tables, and export. I made a page that will allow you to drag your two files into your browser, you can try it out here: [http://tristansokol.github.io/iphone-message-csv-export/](http://tristansokol.github.io/iphone-message-csv-export/)
 
