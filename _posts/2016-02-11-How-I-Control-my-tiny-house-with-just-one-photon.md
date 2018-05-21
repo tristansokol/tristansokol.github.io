@@ -1,13 +1,11 @@
-
 ---
 layout: post
 title: How I control my tiny house with just one Photon.
-published:false 
 ---
 
-*illlistration of tiny house
+* illlistration of tiny house
 
-*illistraton of light strips
+* illistraton of light strips
 
 
 * illustration of photon. 

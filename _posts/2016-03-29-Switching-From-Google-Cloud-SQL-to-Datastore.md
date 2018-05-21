@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Switching from Google Cloud SQL to Datastore 
 ---

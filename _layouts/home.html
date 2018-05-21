@@ -1,0 +1,76 @@
+---
+ layout: new
+---
+
+<div id="main" class="columns  is-gapless" style="margin-bottom:0px">
+    {%- include left.html -%}
+  <div class="column ">
+    <section class="section" style="background-color: rgb(235, 235, 235);
+    -webkit-box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
+    -moz-box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
+    box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
+    height: 100vh; overflow: scroll; box-sizing: border-box;">
+      <div class="container" style="width:100%;">
+        {% for post in paginator.posts %}
+        <article class="box">
+          <div>
+            <div class="mediumContent">
+              <div class="content">
+                <p>
+                  <strong class="post-title">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                      {{ post.title }}
+                    </a>
+                  </strong>
+                  <small>
+                    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d %Y" }}</time>
+                  </small>
+                  <br> {{ post.excerpt }}
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+        <div class="pagination">
+
+          <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+            {% if paginator.next_page %}
+            <a class="pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl }}" style="background-color: white">Older</a>
+            {% else %}
+            <a disabled class="pagination-next">Older</a>
+            {% endif %} {% if paginator.previous_page %}
+            <a class="pagination-previous" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" style="background-color: white">Newer</a>
+            {% else %}
+            <a disabled  class="pagination-previous">Newer</a>
+            {% endif %}
+          </nav>
+          <p class="rss-subscribe">subscribe
+            <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+          </p>
+        </div>
+        <!--
+        {%- if site.posts.size > 0 -%}
+          <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+          <ul class="post-list">
+            {%- for post in site.posts -%}
+            <li>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
+{%- endif -%}
+-->
+    </section>
+    </div>
+  </div>
