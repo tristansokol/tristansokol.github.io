@@ -8,26 +8,26 @@ url:                 http://www.tristansokol.com
 paginate:            5
 baseurl:             ""
 
-# Assets
-#
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass
   style:            :compressed
 
 # About/contact
-author:
-  name:              Tristan Sokol
-  url:               https://twitter.com/tristansokol
-  email:             tristan.sokol@gmail.com
+# author:
+#   name:              Tristan Sokol
+#   url:               https://twitter.com/tristansokol
+#   email:             tristan.sokol@gmail.com
+
+excerpt_separator: <!--more-->
 
 # Custom vars
-version:             2.0.0
 github:
   repo:
 thanks-to:              https://github.com/poole/poole
 
-# Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-feed

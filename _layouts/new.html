@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+
+    <link rel="icon" type="image/png" href="/assets/images/main/favicon.ico">
+    <title>The best Tristan you know</title>
+    <meta name="description" content="Check out the work that I have done, projects that I am working on, explore my random thoughts or just get in touch.">
+    <meta name="author" content="Tristan Sokol">
+    <style>
+        html,
+        body {
+            min-height: 100%
+        }
+
+        a,
+        h3.title {
+            color: rgb(92, 22, 190);
+        }
+    </style>
+</head>
+
+<body>
+
+    {{ content }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20233471-1">
+    </script>
+    <script>
+        if (window.location.host.indexOf('localhost') != 0) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-20233471-1');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -5,6 +5,8 @@ title: Exporting your iPhone messages as a CSV
 #### Want to export your iOS messages as a CSV so that you can keep them for years to come? 
 _This is a step by step DIY tutorial that uses open source software to display your entire message history in your browser._
 
+<!--more-->
+
 ##### Step 1: Back up your phone to your computer. 
  For you this might be physically plugging your phone in, and opening iTunes. You will need to change some options so that you backup to your computer, and not to iCloud. You also do not want to encrypt your backup, or else you will have pain further down the road trying to decrypt it. In fact your options might have to look something like this: 
 ![iTunes Options](/assets/iTunes.png)
