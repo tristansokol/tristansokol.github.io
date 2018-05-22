@@ -9,8 +9,42 @@
 
     <link rel="icon" type="image/png" href="/assets/images/main/favicon.ico">
     <title>The best Tristan you know</title>
-    <meta name="description" content="Check out the work that I have done, projects that I am working on, explore my random thoughts or just get in touch.">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
     <meta name="author" content="Tristan Sokol">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.layout == "post" %}
+    <!-- Twitter -->
+    {% if page.image %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ site.url }}{{page.image}}">
+    {% else %}
+      <meta name="twitter:card" content="summary">
+    {% endif %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 200 }}">
+    <meta name="twitter:site" content="@tristansokol">
+    <meta name="twitter:creator" content="@tristansokol">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 200 }}">
+    {% if page.image %}
+      <meta property="og:image" content="{{ site.url }}{{page.image}}">
+    {% endif %}
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="{{ site.title }}">
+
+    <!-- Google -->
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 200 }}">
+    {% if page.image %}
+      <meta itemprop="image" content="{{ site.url }}{{page.image}}">
+    {% endif %}
+  {% endif %}
+  {% include google_analytics.html %}
     <style>
         html,
         body {
@@ -27,16 +61,7 @@
 <body>
 
     {{ content }}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20233471-1">
-    </script>
-    <script>
-        if (window.location.host.indexOf('localhost') != 0) {
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-20233471-1');
-        }
-    </script>
+
 
 </body>
 

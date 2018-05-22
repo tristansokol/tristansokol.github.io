@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Qualities of a Great API SDK or Library
-published:false 
+published: false 
 ---
 
 APIs are great, but using them is someitimes a chore. That is why API publishers release SDKs and software libraries to help developers move more quickly in their preferredl angulage. Offering up these developerment tools in every langulage would be great, but constraints like lack of expertise, or just not having enough people to upkeep can prevent a first party API library, luckly the open source community can fill in the gaps. Unluckily everybody wants to roll their own thin REST wrapper for their language and it can be hard to pick out your favorite one. 

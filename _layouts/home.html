@@ -4,33 +4,23 @@
 
 <div id="main" class="columns  is-gapless" style="margin-bottom:0px">
     {%- include left.html -%}
-  <div class="column ">
-    <section class="section" style="background-color: rgb(235, 235, 235);
-    -webkit-box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
-    -moz-box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
-    box-shadow: inset 3px 0px 3px 0px rgba(135, 135, 135, 1);
-    height: 100vh; overflow: scroll; box-sizing: border-box;">
-      <div class="container" style="width:100%;">
+  <div class="column " style="position: relative;">
+    <section class="section" style="background-color: rgb(235, 235, 235);box-shadow: 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10, 10, 10, 0.15);height: 100vh; overflow: scroll; padding:1.5rem">
         {% for post in paginator.posts %}
-        <article class="box">
-          <div>
-            <div class="mediumContent">
-              <div class="content">
-                <p>
-                  <strong class="post-title">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
-                      {{ post.title }}
-                    </a>
-                  </strong>
-                  <small>
-                    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d %Y" }}</time>
-                  </small>
-                  <br> {{ post.excerpt }}
-
-                </p>
-              </div>
-            </div>
-          </div>
+        <article class="box" >
+          <div class="content">
+              <strong class="post-title" style="font-size: 24px">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </strong>
+              <small>
+                <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d %Y" }}</time>
+              </small>
+              {% if post.image %}
+              <img src="{{post.image}}" alt="{{post.image_alt}}" />
+              {% endif %}
+              <br> {{ post.excerpt }}
         </article>
         {% endfor %}
         <div class="pagination">
