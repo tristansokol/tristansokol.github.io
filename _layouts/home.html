@@ -5,7 +5,7 @@
 <div id="main" class="columns  is-gapless" style="margin-bottom:0px">
     {%- include left.html -%}
   <div class="column " style="position: relative;">
-    <section class="section" style="background-color: rgb(235, 235, 235);box-shadow: 0 -2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10, 10, 10, 0.15);height: 100vh; overflow: scroll; padding:1.5rem">
+    <section class="section" style="background-color: rgb(235, 235, 235);box-shadow: 0 -2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10, 10, 10, 0.15);height: 100vh; overflow-y: scroll; -webkit-overflow-scrolling: touch; padding:1.5rem">
         {% for post in paginator.posts %}
         <article class="box" >
           <div class="content">

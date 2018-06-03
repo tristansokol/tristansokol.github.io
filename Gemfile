@@ -8,7 +8,7 @@ gem "rouge"
 gem "jekyll-zopfli"
 gem "jekyll-brotli"
 gem "jekyll-paginate"
-gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-feed"
+gem "jekyll-sitemap"
 
