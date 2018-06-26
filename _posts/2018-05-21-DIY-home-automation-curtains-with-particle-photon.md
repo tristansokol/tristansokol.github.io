@@ -61,7 +61,6 @@ The electronics are fairly simple & straightforward. The power supply offers up 
 ### Software
 
 ```javascript
-
 int t = 75000;
 // t, the amount of time required to raise or lower the blinds. 
 
@@ -85,7 +84,6 @@ void lower(){
     digitalWrite(neg, LOW);
 }
 
-
 void setup() {
     pinMode(pos, OUTPUT);
     pinMode(neg, OUTPUT);
@@ -100,7 +98,6 @@ void setup() {
 
     raise();
 }
-
 
 void loop() {
     if(Time.hour() == 19 && !isCurtainDown ){
