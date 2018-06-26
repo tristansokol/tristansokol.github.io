@@ -1,0 +1,34 @@
+---
+layout: post
+title:
+published: false 
+---
+Moving my blog posts back to a markdown based drafting system meant lots of improvements, like more control over my blog, better automation capabilites, etc. But I gave up some of the basics, like spell checking. IDE plugins can address some of those shortcomings, but what about some of the more nuanced things, like making sure all of my posts have a cool image. But just like my code, why couldn't I write tests for my blog posts? 
+
+I'm not the first one to have this idea. One of the very first talks I ever saw in SF was from Zach Holman about how [GitHub wrote their blog posts](https://zachholman.com/posts/how-github-writes-blog-posts/). I remember loving the talk, thinking about how awesome it would be to work at GitHub and thinking about what kind of neat things having such an engineering driven culture might produce. I thought about just using the testing foundation from that blog post, but instead decideded to throw what I know and use JavaScript instead. One big advantage there is that there are so many NPM packages to take advantage of when I need things like spell checking or image parsing. 
+
+### But when will the tests actually run? 
+
+I first started out thinking about the end-to-end experience, to make sure that there weren't any weird requirements that would come up when actually writing the code. Ideally it seemed like my tests would be part of some kind of CI infrastructure. When I wrote a new post, it would be in a new branch, and then the CI would run the tests as I made a pull request. More realistically, since I am the only collaborator, I instead just do all my editing on master. Other options came to mind: I could run the code in a git hook or some kind of script before deployments. I haven't currently created any kind of deploy scirpt, since pushing to master will publish my posts with github pages. Creating a stand alone test script and using it in a `pre-push` or `pre-commit` based hook. 
+
+### writing the tests
+
+Testing with javascript is not new, at all, in the least bit. Most of my js testing experience is with mocha & chai, but this seemed like a good opportunity to try out Jest. Jest is new and cool(TODO). 
+
+It was actually really easy getting my first test set up with jest. The first one off the ground was a basic check to make sure that none of the blog post files had a space in them. 
+
+```javascript
+fs = require('fs')
+
+const postDirectory = "../_posts/"
+
+test('No spaces in file names', () => {
+    fs.readdir(postDirectory, (err, files) => {
+        files.forEach(file => {
+          console.log(file)
+          expect(file).toEqual(expect.not.stringContaining(" "))
+        });
+      })
+  });
+  ```
+
