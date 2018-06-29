@@ -12,9 +12,13 @@
     "eslint": "^5.0.1",
     "eslint-config-google": "^0.9.1",
     "jest": "^23.2.0",
-    "jest-extended": "^0.7.2"
+    "jest-extended": "^0.7.2",
+    "parser-front-matter": "^1.6.4"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "jest-extended"
+  },
+  "dependencies": {
+    "spellchecker": "^3.4.4"
   }
 }

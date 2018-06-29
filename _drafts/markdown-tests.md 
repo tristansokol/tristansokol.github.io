@@ -32,3 +32,20 @@ test('No spaces in file names', () => {
   });
   ```
 
+From there it was pretty easy to start writing up the rest of my tests. I wanted to do things like check for a my `excerpt_separator`. Almost all of these were pretty basic 
+
+```javascript
+  test('Has exerpt Snippet', () => {
+    content = fs.readFileSync(postDirectory + posts[i], 'utf8');
+    expect(content).toEqual(expect.stringContaining('<!--more-->'));
+  });
+  ```
+
+  Then I wanted to start making some tests for my the front matter of my blog posts. This is where the usefulness of the javascript ecosystem came in. All I did was pull in [`parser-front-matter`](https://github.com/jonschlinkert/parser-front-matter) and I was easily able to get the front matter for my posts beautifully parsed in an object. Making a test for one of the properties becomes pretty trivial then.
+
+  ```javascript
+    test('Has a lead image', () => {
+    let frontMatter= parser.parseSync(content);
+    expect(frontMatter).toHaveProperty('image');
+  });
+  ```
