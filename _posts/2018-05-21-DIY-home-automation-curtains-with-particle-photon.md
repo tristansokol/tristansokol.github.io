@@ -10,7 +10,7 @@ I have never been much of a morning person, but nothing wakes me up better than 
 
 <!--more-->
 
-Initially I wanted something that could open my curtains in the moring with the possibility of enhancements in the future. The basic premise is to attach the curtains to something long and round and then use a motor + IoT device to roll the curtains up at the appropriate time.
+Initially I wanted something that could open my curtains in the morning with the possibility of enhancements in the future. The basic premise is to attach the curtains to something long and round and then use a motor + IoT device to roll the curtains up at the appropriate time.
 
 This project took a few iterations, and is still a work in progress, but we are at a good point in its development to share what is going on.
 
@@ -26,7 +26,7 @@ This project took a few iterations, and is still a work in progress, but we are 
 
 * **pvc pipe**: I went for the cheapest, smallest pipe I could find that was longer than my windows, 3/4" pvc is what my Home Depot had.
 
-* **bracket**: I spent some time wandering the eisles of home depot trying to find something that was a right angle, I could drill through pretty easily, and large enough to fit the mounting screws on my motor. What I ended up with was a smaller shelf style bracket. 
+* **bracket**: I spent some time wandering the aisles of home depot trying to find something that was a right angle, I could drill through pretty easily, and large enough to fit the mounting screws on my motor. What I ended up with was a smaller shelf style bracket. 
 
 * **mounting screws**: One of the many things you give up when buying parts from the oh so affordable depths of ebay is that you doent really get a datasheet about anything. I brought my motor into home depot until I found that M5 screws fit perfectly.
 
@@ -44,17 +44,17 @@ This project took a few iterations, and is still a work in progress, but we are 
 
 ### Build
 
-TK - Animation of motor & bracket coming together
+TODO - Animation of motor & bracket coming together
 
 in My previous attempts with this project, the crux was attaching the motor to the curtains, and the wall, so I tackled that first. after some very approximate measurement I drilled holes into my bracket to mostly fit the mounting screws for my motor.
 
-TK - Animation of endcap, motor, screw & pipe coming together
+TODO - Animation of endcap, motor, screw & pipe coming together
 
 To connect the motor shaft to the curtain pole, we used a pvc endcap with a hole drilled in it and another mounting screw for the motor shaft. 
 
 ### Electronics
 
-TK - Schematic of photon & h-bridge with dotted lines to components. 
+TODO - Schematic of photon & h-bridge with dotted lines to components. 
 
 The electronics are fairly simple & straightforward. The power supply offers up 9V which is pumped directly into the motor and the 5v regulator. The 5v feeds into the Photon (and the hbridge?) and two of the GPIO pins from the photon contron the inputs for the motor via the h-bridge. 
 

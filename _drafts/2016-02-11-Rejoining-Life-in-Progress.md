@@ -3,7 +3,9 @@ layout: post
 title: Rejoining Life In Progress 
 ---
 
-_One day I was digging through an attic and I found this story, now I keep it posted online to try and find the owner._ 
+_One day I was digging through an attic and I found this story, now I keep it posted online to try and find the owner._
+
+<!--more-->
 
 ## Rejoining Life In Progress 
 
