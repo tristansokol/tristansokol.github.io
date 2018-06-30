@@ -3,10 +3,11 @@ layout: post
 title: "Basic Tutorial with TensorFlow.js: Linear Regression"
 image: assets/images/tensorflow-linear.gif
 image_alt: "Stylized TensorFlow.js Logo"
-published: false
+published: true
 ---
 
 Fresh off of the [OpenAI Retro contest](https://blog.openai.com/first-retro-contest-retrospective/), I wanted to keep exploring more AI topics. Somebody told me that the best way to learn was reproducing other people's papers. Not wanting to learn any more Python than I had to, I decided to try to tackle some existing work with [TensorFlow.js](https://js.tensorflow.org/).
+
 
 I first tried to run, but I realized it might be better to crawl first since I am coming from a pretty fresh background. I was able to find a series of basic TensorFlow examples that I felt would let me ladder up my TensorFlow.js skills in [aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)TODO link to past blog posts?
 
@@ -75,7 +76,7 @@ const b = tf.variable(tf.scalar(Math.random()));
 
 Right now we can visualize our data, but because we only have the randomly initialized numbers to define our line, we don't have a very good fit.
 
-<p data-height="526" data-theme-id="light" data-slug-hash="LrrwMm" data-default-tab="result" data-user="tristansokol" data-embed-version="2" data-pen-title="Linear Regression: no training" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/LrrwMm/">Linear Regression: no training</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="526" data-theme-id="light" data-slug-hash="LrrwMm" data-default-tab="result" data-class="codepen-600" data-user="tristansokol" data-embed-version="2" data-pen-title="Linear Regression: no training" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/LrrwMm/">Linear Regression: no training</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Even though we know that we don't have a good model, we can use it to predict the Y values of the points. We'll create a new function (`predict()`) to efficiently run the model. `predict()` takes a tensor of x values in as an argument, then multiplies them by `m` and adds them to `b`, returning the result. [`tf.tidy()`](https://js.tensorflow.org/api/0.11.7/#tidy) is a helper function to make sure that any intermediate Tensors are effectively garbage collected. 
@@ -89,7 +90,7 @@ function predict(x) {
 
 As you would expect, all of the points are on the line that describes the slope (`m`) and y-offset (`b`).
 
-<p data-height="550" data-theme-id="light" data-slug-hash="VdBLeg" data-default-tab="result" data-user="tristansokol" data-embed-version="2" data-pen-title="Unfitted line" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/VdBLeg/">Unfitted line</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="light" data-slug-hash="VdBLeg" data-default-tab="result" data-class="codepen-600" data-user="tristansokol" data-embed-version="2" data-pen-title="Unfitted line" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/VdBLeg/">Unfitted line</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Let's see if we can actually get a good fit. We are still missing a couple pieces of the puzzle to do that though. One is the loss function. The loss function will be what our model uses to determine how well the model is performing. I think it could just as easily be described in the positive and be called a fit or _goodness_ function but loss seems to be what the data science community has picked.
@@ -128,7 +129,7 @@ function train() {
 
 Depending on what learning rate you use, you should be able to get to a very good solution in just a few iterations. Try it out in the pen below! 
 
-<p data-height="495" data-theme-id="light" data-slug-hash="XYoQKB" data-default-tab="result" data-user="tristansokol" data-embed-version="2" data-pen-title="Unfitted line" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/XYoQKB/">Unfitted line</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="495" data-theme-id="light" data-slug-hash="XYoQKB" data-default-tab="result" data-class="codepen-600" data-user="tristansokol" data-embed-version="2" data-pen-title="Unfitted line" class="codepen">See the Pen <a href="https://codepen.io/tristansokol/pen/XYoQKB/">Unfitted line</a> by Tristan Sokol (<a href="https://codepen.io/tristansokol">@tristansokol</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 I hope you enjoyed this tutorial with TensorFlow.js! You can find the complete code in all of the codepens, as well as in this [gist](https://gist.github.com/tristansokol/6f95f69dfc04cd96c9a69f8b9f2d2093). If you are looking for more TensorFlow.js content, check out the official [curve fitting example](https://js.tensorflow.org/tutorials/fit-curve.html) & follow me for the next thing I'll write. 
