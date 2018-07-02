@@ -6,12 +6,11 @@ image_alt: "Stylized TensorFlow.js Logo"
 published: true
 ---
 
-Fresh off of the [OpenAI Retro contest](https://blog.openai.com/first-retro-contest-retrospective/), I wanted to keep exploring more AI topics. Somebody told me that the best way to learn was reproducing other people's papers. Not wanting to learn any more Python than I had to, I decided to try to tackle some existing work with [TensorFlow.js](https://js.tensorflow.org/).
+Fresh off of the [OpenAI Retro contest](https://blog.openai.com/first-retro-contest-retrospective/), I wanted to keep exploring more AI topics. Somebody told me that the best way to learn was reproducing other people's papers, but not wanting to learn any more Python than I had to, I decided to try to tackle some existing work with [TensorFlow.js](https://js.tensorflow.org/).
 
+I first tried to run with a GAN, but I realized it might be better to crawl first since I am coming from a pretty fresh background. I was able to find a series of basic TensorFlow examples that I felt would let me ladder up my TensorFlow.js skills in [aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples). I'll be redoing all of these [Basic Operations](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/basic_operations.ipynb) and [Linear Regression](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/2_BasicModels/linear_regression.ipynb) with TensorFlow.js. 
 
-I first tried to run, but I realized it might be better to crawl first since I am coming from a pretty fresh background. I was able to find a series of basic TensorFlow examples that I felt would let me ladder up my TensorFlow.js skills in [aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)TODO link to past blog posts?
-
-
+<!--more-->
 
 ## Hello World
 I'm not sure what the right Hello World with TensorFlow would be, so I printed out my first 1 dimensional Tensor:
@@ -25,11 +24,11 @@ tf.scalar(3.14).print();
 // Tensor
 //     3.140000104904175
 ```
-and hey, looks like floating point percision problems exist in the TensorFlow world too!
+and hey, looks like floating point precision problems exist in the TensorFlow world too!
 
 ## Basic Operations
 
-Getting a handle on the basic operations seems important! On of the biggest surprises here was that methods to display the values inside of a Tensor seem somewhat limited. `tf.print()` and `tf.toString()` both add the word `Tensor` with a newline to the text, making it a bit hard to easily display values.
+Getting a handle on the basic operations seems important! One of the biggest surprises here was that methods to display the values inside of a Tensor seem somewhat limited. `tf.print()` and `tf.toString()` both add the word `Tensor` with a newline to the text, making it a bit hard to easily display values.
 
 ```javascript
 let a = tf.scalar(2);
@@ -48,7 +47,7 @@ console.log('Multiplication with constants:'+ a.mul(b).dataSync()[0]);
 
 This was the same as above, but in Python using a placeholder input and feeding in values when the session ran. With the idiomatic differences between Python TensorFlow and TensorFlow.js, I couldn't see a useful way to do this besides creating functions that took tensors as input.
 
-## Matrix Mulitplication
+## Matrix Multiplication
 
 Again, another basic Tensor operation, the dot product.
 
